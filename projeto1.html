@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto: Simulação de MRI em Python</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-blue-700 text-white p-6 shadow-lg transition duration-300 hover:shadow-xl">
+    <div class="max-w-5xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold hover:scale-105 transition-transform duration-300">Daniel Costa</h1>
+      <a href="index.html" class="hover:underline transition-all hover:translate-x-[-4px]">← Voltar ao Portfólio</a>
+    </div>
+  </header>
+
+  <!-- Conteúdo -->
+  <main class="max-w-4xl mx-auto py-16 px-6 fade-in">
+    <h2 class="text-4xl font-bold mb-4">Simulação de Ressonância Magnética (MRI) em Python</h2>
+    <p class="text-gray-600 text-lg mb-6">Projeto desenvolvido como parte do portfólio académico em Engenharia Biomédica.</p>
+
+    <!-- Imagem -->
+    <img src="C:\Users\dani2\Desktop\IMPORTANTE\Website Portfólio\imagens\resultadomri.png" alt="Amostra da simulação de MRI" class="rounded-xl shadow-md mb-6 transition hover:scale-105 duration-300" width="700" height="500">
+
+    <h3 class="text-2xl font-semibold mb-2">Objetivo</h3>
+    <p class="mb-4">
+      Este projeto foi realizado com o objetivo de compreender e demonstrar, de forma prática e acessível, os princípios fundamentais da formação de imagens por Ressonância Magnética (MRI). Através de uma simulação computacional, recriei o processo de aquisição e reconstrução de imagens médicas, bem como os efeitos de ruído, movimento e aquisição acelerada (undersampling). 
+      O foco esteve em traduzir conceitos teóricos complexos em exemplos visuais e intuitivos, que permitam uma melhor compreensão do funcionamento da técnica.
+    </p>
+
+    <h3 class="text-2xl font-semibold mb-2">Ferramentas Utilizadas</h3>
+    <ul class="list-disc pl-6 mb-4">
+      <li>Python 3.10</li>
+      <li>NumPy (processamento numérico)</li>
+      <li>Matplotlib (visualização)</li>
+      <li>scikit-image (phantom de Shepp-Logan e manipulação de imagens)</li>
+    </ul>
+
+    <h3 class="text-2xl font-semibold mb-2">Como Funciona</h3>
+    <p class="mb-4">A simulação segue a lógica de um exame real de MRI:</p>
+    <ul class="list-disc pl-6 mb-4">
+      <li>O phantom de Shepp-Logan foi utilizado como modelo de um corte cerebral.</li>
+      <li>A imagem é transformada para o espaço <em>k</em> (domínio da frequência) através da Transformada de Fourier.</li>
+      <li>A reconstrução ideal é realizada com a Transformada de Fourier inversa.</li>
+    </ul>
+    <p class="mb-4">Foram ainda simulados cenários clínicos reais:</p>
+    <ul class="list-disc pl-6 mb-4">
+      <li><strong>Ruído:</strong> baixa relação sinal/ruído, comum em exames rápidos.</li>
+      <li><strong>Artefactos de movimento:</strong> provocados por movimentos involuntários do paciente.</li>
+      <li><strong>Undersampling:</strong> aquisição acelerada, sacrificando qualidade em prol da velocidade.</li>
+    </ul>
+
+    <h3 class="text-2xl font-semibold mb-2">Desafios</h3>
+    <p class="mb-4">
+      Um dos principais desafios foi adaptar um processo altamente técnico e clínico, como o da ressonância magnética, a um ambiente de simulação computacional acessível. 
+      Foi necessário simplificar os modelos físicos sem perder a essência dos fenómenos simulados. 
+      Outro desafio foi garantir que as imagens obtidas fossem suficientemente claras para transmitir as diferenças entre ruído, movimento e undersampling.
+    </p>
+
+    <h3 class="text-2xl font-semibold mb-2">Aprendizagens</h3>
+    <p class="mb-4">
+      Este projeto permitiu consolidar conhecimentos fundamentais de processamento de sinais e imagens médicas, além de reforçar a importância do espaço <em>k</em> e da reconstrução por Fourier na MRI. 
+      Também demonstrou como fatores práticos, como o tempo de aquisição e a estabilidade do paciente, impactam diretamente na qualidade diagnóstica das imagens.
+    </p>
+    <p class="mb-4">
+      Mais do que um exercício técnico, este trabalho ajudou a transformar teoria complexa em resultados visuais, criando uma ponte entre a matemática, a tecnologia e a prática clínica.
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-blue-700 text-white text-center py-6 mt-10 fade-in">
+    <p>&copy; 2025 Daniel Costa</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | Estudante de Engenharia Biomédica</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-blue-700 text-white p-6 shadow-lg transition duration-300 hover:shadow-xl">
+    <div class="max-w-5xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold hover:scale-105 transition-transform duration-300">Daniel Costa</h1>
+      <nav class="space-x-4">
+        <a href="#sobre" class="hover:underline transition duration-200">Sobre</a>
+        <a href="#projetos" class="hover:underline transition duration-200">Projetos</a>
+        <a href="#voluntariado" class="hover:underline transition duration-200">Voluntariado</a>
+        <a href="#neebul" class="hover:underline transition duration-200">NEEBUL</a>
+        <a href="#certificados" class="hover:underline transition duration-200">Certificados</a>
+        <a href="#contacto" class="hover:underline transition duration-200">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-blue-50 text-center py-20 fade-in">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4">Daniel Costa</h2>
+    <h2 class="text-4xl md:text-5xl font-bold mb-4">Estudante de Engenharia Biomédica</h2>
+    <p class="text-xl text-gray-600">Apaixonado por tecnologia, saúde e inovação.</p>
+  </section>
+
+  <!-- Sobre Mim -->
+<section id="sobre" class="max-w-4xl mx-auto py-16 px-6 fade-in">
+  <h3 class="text-3xl font-bold mb-6">Sobre Mim</h3>
+
+  <p class="text-lg leading-relaxed">
+    Olá! O meu nome é Daniel Costa e sou estudante do 1.º ano da licenciatura em Engenharia Biomédica na Universidade Lusófona. Sou também o fundador do Núcleo de Estudantes de Engenharia Biomédica da Universidade Lusófona, uma iniciativa que visa promover o desenvolvimento académico, a partilha de conhecimento e a ligação entre estudantes e profissionais da área.
+  </p>
+
+  <p class="text-lg leading-relaxed mt-4">
+    Tenho um interesse profundo pela área da saúde e fascina-me a forma como a tecnologia pode ser aplicada para melhorar a vida das pessoas. A Engenharia Biomédica permite-me explorar esta intersecção, combinando a minha paixão pela ciência médica com o entusiasmo pela inovação tecnológica.
+  </p>
+
+  <p class="text-lg leading-relaxed mt-4">
+    Gosto particularmente de aprender sobre o corpo humano, explorar a eletrónica, programar e desenvolver soluções práticas. Estou sempre motivado para adquirir novos conhecimentos e aplicar o que aprendo em projetos que tenham impacto real.
+  </p>
+
+  <p class="text-lg leading-relaxed mt-4">
+    Sou movido pela curiosidade, pelo espírito de iniciativa e pela vontade de contribuir para um futuro onde a engenharia e a medicina trabalham lado a lado para criar soluções mais eficazes e humanas.
+  </p>
+
+  <p class="mt-4 text-lg">
+    Neste site partilho o que ando a aprender, projetos que faço (mesmo os pequenos!) e ideias para o futuro.
+  </p>
+</section>
+
+
+  <!-- Projetos -->
+  <section id="projetos" class="bg-gray-100 py-16 px-6 fade-in">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-3xl font-bold mb-10 text-center">Projetos</h3>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Projeto 1 -->
+        <a href="projeto1.html" class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300 block">
+          <h4 class="text-xl font-semibold mb-2 text-blue-700">Simulação de Ressonância Magnética (MRI) em Python</h4>
+          <p class="text-gray-700">Compreensão e demonstração, de forma prática e acessível, os princípios fundamentais da formação de imagens por Ressonância Magnética (MRI), em Python.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Voluntariado -->
+  <section id="voluntariado" class="py-16 px-6 fade-in">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-3xl font-bold mb-10 text-center">Voluntariado</h3>
+      
+      <ol class="relative border-l border-blue-600">
+        
+        <!-- Experiência 1 -->
+        <li class="mb-10 ml-6">
+          <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-600 rounded-full -left-3 ring-8 ring-white"></span>
+          <h4 class="text-xl font-semibold text-blue-700">Aluno Assistente</h4>
+          <p class="text-sm text-gray-500">Instituto de Ciências Educativas • 2022/2023</p>
+          <p class="mt-2 text-gray-700">
+            No contexto da disciplina de Biologia, tive a oportunidade de acompanhar e orientar alunos do 3º e 4º ano, realizando atividades laboratoriais durante a Semana da Ciência no ano letivo de 2022/2023.
+          </p>
+        </li>
+
+        <!-- Experiência 2 -->
+        <li class="mb-10 ml-6">
+          <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-600 rounded-full -left-3 ring-8 ring-white"></span>
+          <h4 class="text-xl font-semibold text-blue-700">Representante da Instituição</h4>
+          <p class="text-sm text-gray-500">Universidade Lusófona - Futurália 2025</p>
+          <p class="mt-2 text-gray-700">
+            Representei a Universidade Lusófona na Futurália 2025, apresentando os cursos da instituição, esclarecendo dúvidas de alunos e pais, ajudando-os na escolha do percurso académico.
+          </p>
+        </li>
+
+        <!-- Experiência 3 -->
+        <li class="ml-6">
+          <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-600 rounded-full -left-3 ring-8 ring-white"></span>
+          <h4 class="text-xl font-semibold text-blue-700">Representante NEEBUL | Voluntário Biojornadas</h4>
+          <p class="text-sm text-gray-500">Faculdade de Engenharia - Universidade Lusófona • 2025</p>
+          <p class="mt-2 text-gray-700">
+            Atuei como representante do Núcleo de Estudantes de Engenharia Biomédica nas Biojornadas 2025, apoiando na receção de convidados, organização de coffee breaks e coordenação de atividades.
+          </p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- NEEBUL -->
+  <section id="neebul" class="bg-gray-100 py-16 px-6 fade-in">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-3xl font-bold mb-10 text-center">Percurso no Núcleo de Estudantes de Engenharia Biomédica da Universidade Lusófona (NEEBUL)</h3>
+
+      <ol class="relative border-l border-blue-600">
+        <!-- Fundação -->
+        <li class="mb-10 ml-6">
+          <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-600 rounded-full -left-3 ring-8 ring-gray-100"></span>
+          <h4 class="text-xl font-semibold text-blue-700">Fundador do NEEBUL</h4>
+          <p class="text-sm text-gray-500">Universidade Lusófona</p>
+        </li>
+
+        <!-- Vice Presidente -->
+        <li class="mb-10 ml-6">
+          <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-600 rounded-full -left-3 ring-8 ring-gray-100"></span>
+          <h4 class="text-xl font-semibold text-blue-700">Vice-Presidente</h4>
+          <p class="text-sm text-gray-500">Mai 2025 – Presente</p>
+          <p class="mt-2 text-gray-700">Contribuo para o desenvolvimento e apoio à comunidade académica, coordenando atividades, organizando eventos e servindo de ponte entre os estudantes e a direção da faculdade.</p>
+        </li>
+
+        <!-- Social Media -->
+        <li class="mb-10 ml-6">
+          <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-600 rounded-full -left-3 ring-8 ring-gray-100"></span>
+          <h4 class="text-xl font-semibold text-blue-700">Social Media Designer & Manager</h4>
+          <p class="text-sm text-gray-500">Mai 2025 – Presente</p>
+          <p class="mt-2 text-gray-700">Responsável pela criação de conteúdos visuais atrativos e pela gestão das plataformas digitais, desenvolvendo campanhas de comunicação e assegurando a presença online do núcleo.</p>
+        </li>
+
+        <!-- Eventos -->
+        <li class="mb-10 ml-6">
+          <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-600 rounded-full -left-3 ring-8 ring-gray-100"></span>
+          <h4 class="text-lg font-semibold text-blue-700">Eventos e Participações</h4>
+          <ul class="list-disc pl-5 mt-2 text-gray-700 space-y-2">
+            <li><strong>14/03/2025</strong> – Visita à Escola Profissional Val do Rio (Estoril), apresentação do curso de Engenharia Biomédica.</li>
+            <li><strong>22/05/2025</strong> – Hosting da palestra “Fisiatria e Engenharia Biomédica” com a Dra. Inês Camarinha e Dra. Catarina Afonso.</li>
+            <li><strong>18/06/2025</strong> – Voluntariado nas Biojornadas 2025, organizadas pelo BioRG.</li>
+            <li><strong>10/09/2025</strong> – Apresentação do curso aos caloiros no dia de acolhimento do ano letivo 2025/2026.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+ <!-- Certificados -->
+  <section id="certificados" class="py-16 px-6 bg-white fade-in">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-3xl font-bold mb-10 text-center">Certificados e Participações</h3>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        
+        <!-- MATLAB Onramp -->
+        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold text-blue-700">MATLAB Onramp</h4>
+          <p class="text-gray-600">MATLAB Coding</p>
+          <p class="text-sm text-gray-500 mt-2">Emitido em Mar 2025</p>
+        </div>
+
+        <!-- SPIMP -->
+        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold text-blue-700">SPIMP - 2ª Reunião Científica</h4>
+          <p class="text-gray-600">Sociedade Portuguesa para a Inovação em Microbioma e Probióticos</p>
+          <p class="text-sm text-gray-500 mt-2">Emitido em Fev 2025</p>
+        </div>
+
+        <!-- Critical Thinking -->
+        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold text-blue-700">Critical Thinking & Problem Solving</h4>
+          <p class="text-gray-600">Santander Open Academy</p>
+          <p class="text-sm text-gray-500">Credential ID: OA-2025-0129000774400</p>
+          <p class="text-sm text-gray-500 mt-2">Emitido em Jan 2025</p>
+        </div>
+
+        <!-- Neurovasc -->
+        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold text-blue-700">Neurovasc: 1ª Reunião</h4>
+          <p class="text-gray-600">Sociedade Portuguesa de Neurocirurgia & Neurorradiologia</p>
+          <p class="text-sm text-gray-500 mt-2">Emitido em Jan 2025</p>
+        </div>
+
+        <!-- Suporte Básico de Vida -->
+        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold text-blue-700">Curso Suporte Básico de Vida (SBV)</h4>
+          <p class="text-gray-600">Alento - Associação para a Formação em Reanimação</p>
+          <p class="text-sm text-gray-500 mt-2">Emitido em Abr 2023 • Expira Abr 2026</p>
+        </div>
+
+        <!-- Junior Achievement -->
+        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold text-blue-700">Certificado de Participação</h4>
+          <p class="text-gray-600">Junior Achievement Portugal</p>
+          <p class="text-sm text-gray-500 mt-2">Emitido em Jan 2023</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-16 px-6 text-center fade-in">
+    <h3 class="text-3xl font-bold mb-6">Contacto</h3>
+    <p class="mb-4">Queres falar comigo? Envia-me um e-mail ou conecta-te pelas redes sociais!</p>
+    <p class="text-lg font-semibold mb-2">📧 danielrcosta.dev@gmail.com</p>
+    <div class="flex justify-center space-x-6 text-blue-700 text-xl">
+      <a href="https://www.linkedin.com/in/daniel-costa-b71560294/" target="_blank" class="hover:underline hover:text-blue-900 transition">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-700 text-white text-center py-6 fade-in">
+    <p>&copy; 2025 Daniel Costa - Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
