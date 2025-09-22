@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto: Relatório Automático de Pressão Arterial</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-blue-700 text-white p-6 shadow-lg transition duration-300 hover:shadow-xl">
+    <div class="max-w-5xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold hover:scale-105 transition-transform duration-300">Daniel Costa</h1>
+      <a href="index.html" class="hover:underline transition-all hover:translate-x-[-4px]">← Voltar ao Portfólio</a>
+    </div>
+  </header>
+
+  <!-- Conteúdo -->
+  <main class="max-w-4xl mx-auto py-16 px-6 fade-in">
+    <h2 class="text-4xl font-bold mb-4">Relatório Automático de Pressão Arterial</h2>
+    <p class="text-gray-600 text-lg mb-6">
+      Projeto desenvolvido com o objetivo de monitorizar e analisar a pressão arterial e os batimentos cardíacos de forma prática e visual.
+    </p>
+
+    <!-- Objetivo -->
+    <h3 class="text-2xl font-semibold mb-2">Objetivo</h3>
+    <p class="mb-4">
+      Este projeto permite gerar relatórios em PDF com gráficos de tensões e batimentos, além de uma tabela detalhada da classificação diária. O foco é fornecer uma visão clara do estado cardiovascular antes da consulta médica.
+    </p>
+
+    <!-- Ferramentas -->
+    <h3 class="text-2xl font-semibold mb-2">Ferramentas Utilizadas</h3>
+    <ul class="list-disc pl-6 mb-4">
+      <li>Python 3.10</li>
+      <li>Pandas – leitura e manipulação de dados Excel</li>
+      <li>Matplotlib – criação de gráficos</li>
+      <li>ReportLab – geração do PDF final</li>
+      <li>OpenPyXL – suporte à leitura de ficheiros Excel .xlsx</li>
+    </ul>
+
+    <!-- Como Funciona -->
+    <h3 class="text-2xl font-semibold mb-2">Como Funciona</h3>
+    <p class="mb-4">
+      O programa segue uma lógica estruturada, semelhante a um pipeline de análise clínica:
+    </p>
+
+    <ul class="list-disc pl-6 mb-4">
+      <li><strong>Leitura dos Dados:</strong> O programa lê os dados de um ficheiro Excel (<em>tensoes.xlsx</em>) contendo: Dia, Tensão Máxima, Tensão Mínima e Batimentos.</li>
+      <li>As datas são interpretadas de forma flexível, aceitando diferentes separadores e anos abreviados ou completos.</li>
+    </ul>
+
+    <!-- Imagem da tabela de dados -->
+    <img src="C:\Users\dani2\Desktop\IMPORTANTE\Website Portfólio\imagens\tabela_dados.png" alt="Tabela de Dados" class="rounded-xl shadow-md mb-6 w-full max-w-xl mx-auto">
+
+    <ul class="list-disc pl-6 mb-4">
+      <li><strong>Normalização das Unidades:</strong> Converte as tensões para a unidade correta (cmHg ou mmHg).</li>
+      <li><strong>Classificação da Pressão Arterial:</strong> Cada dia é classificado segundo diretrizes de hipertensão. Os batimentos também são analisados.</li>
+      <li><strong>Geração dos Gráficos:</strong>
+        <ul class="list-disc pl-6 mb-2">
+          <li>Gráfico 1 – Tensões: colunas laranja (máxima) e azul (mínima).</li>
+          <li>Gráfico 2 – Batimentos: colunas vermelhas representando os batimentos cardíacos.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Imagens dos gráficos -->
+    <img src="C:\Users\dani2\Desktop\IMPORTANTE\Website Portfólio\imagens\grafico_tensao.png" alt="Gráfico das Tensões" class="rounded-xl shadow-md mb-6 w-full max-w-xl mx-auto">
+    <img src="C:\Users\dani2\Desktop\IMPORTANTE\Website Portfólio\imagens\grafico_batimentos.png" alt="Gráfico dos Batimentos" class="rounded-xl shadow-md mb-6 w-full max-w-xl mx-auto">
+
+    <ul class="list-disc pl-6 mb-4">
+      <li><strong>Criação do Relatório em PDF:</strong> Os gráficos são incorporados no PDF, seguidos de uma lista detalhada de cada dia com: data, tensões, classificação e batimentos. As cores ajudam na leitura: verde (óptima), laranja (pré-hipertensão), vermelho (hipertensão). O resumo geral indica o número de dias em cada categoria.</li>
+    </ul>
+
+    <!-- Aviso de dados reais -->
+    <p class="text-red-600 font-semibold mb-4">
+      Nota: O programa foi testado com dados reais de um indivíduo do sexo masculino, 30 anos, com suspeita de hipertensão. Este relatório é apenas informativo e não substitui acompanhamento médico.
+    </p>
+
+    <!-- Desafios -->
+    <h3 class="text-2xl font-semibold mb-2">Desafios</h3>
+    <ul class="list-disc pl-6 mb-4">
+      <li>Visualizar relatórios de forma apelativa com cores e gráficos.</li>
+      <li>Flexibilidade na leitura de datas e unidades.</li>
+      <li>Garantir simplicidade de uso para qualquer utilizador gerar o PDF automaticamente.</li>
+    </ul>
+
+    <!-- Aprendizagens -->
+    <h3 class="text-2xl font-semibold mb-2">Aprendizagens</h3>
+    <ul class="list-disc pl-6 mb-4">
+      <li>Compreensão da importância da monitorização contínua da pressão arterial e batimentos cardíacos.</li>
+      <li>Experiência prática em Python para ler e manipular dados Excel.</li>
+      <li>Capacidade de gerar relatórios visuais claros e informativos.</li>
+      <li>Consolidação do conhecimento sobre classificação da hipertensão e interpretação de valores clínicos.</li>
+    </ul>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-blue-700 text-white text-center py-6 mt-10 fade-in">
+    <p>&copy; 2025 Daniel Costa</p>
+  </footer>
+
+</body>
+</html>
